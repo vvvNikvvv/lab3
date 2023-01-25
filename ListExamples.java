@@ -1,8 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
-interface StringChecker { boolean checkString(String s); }
+interface StringChecker { 
+  boolean checkString(String s); 
+}
 
+class checkAlphabet implements StringChecker{
+  public boolean checkString(String s){
+    return s.contains("x");
+ 
+  }
+
+}
 class ListExamples {
 
   // Returns a new list that has all the elements of the input list for which
